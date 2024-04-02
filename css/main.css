@@ -3,6 +3,7 @@ header {
     height: 8.8rem;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
 }
 
 header .container {
@@ -27,4 +28,79 @@ header nav ul li a {
     color: var(--gray-100);
     font-size: 1.6rem;
     letter-spacing: -0.48px;
+    transition: opacity .3s easy;
+}
+
+header nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.s-hero {
+    position: relative;
+    width: 100%;
+    padding-top: 11.3rem;
+    height: 106.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.s-hero::after {
+    content: '';
+    width: 100%;
+    height: 22rem;
+    background-color: var(--pink-10);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.s-hero .text {
+    position: relative;
+    width: 100%;
+    max-width: 71.9rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+}
+
+.s-hero .text h1 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: -1.68px;
+}
+
+.s-hero .text h1::before {
+    content: '';
+    width: 100%;
+    max-width: 59.9rem;
+    height: 2.2rem;
+    background: url("../img/line-title.svg") no-repeat center center;
+    position: absolute;
+    left: 3.9rem;
+    bottom: -10px;
+    z-index: -1;
+    
+}
+
+.s-hero .text p {
+    max-width: 55.6rem;
+    margin: 0 auto;
+    letter-spacing: -0.54px;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    color: var(--gray-300);
+}
+
+.s-hero .text .arrow {
+    position: absolute;
+    bottom: 1.7rem;
+    left: 8rem;
+}
+
+.s-hero .ilustra {
+    padding: 1.5rem;
 }
