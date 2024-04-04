@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structboost</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/grid.css">
@@ -39,7 +42,7 @@
 
     <section class="s-hero">
         <div class="container">
-            <div class="text">
+            <div class="text" data-aos="fade-right">
                 <h1>Straightforward and Simplified Front-End!</h1>
                 <p>Learn to develop modern, high-quality interfaces from industry experts with a track record of renowned Projects.</p>
                 <button class="btn-primary lg">
@@ -48,12 +51,13 @@
                 <img src="./img/arrow-direction-button.svg" class="arrow" alt="">
             </div>
         </div>
-        <img src="./img/ilustra-hero.svg" class="ilustra" alt="">
+        <img src="./img/ilustra-hero.svg" class="ilustra" data-aos="fade-up" data-aos-delay="200" alt="">
+        <img src="./img/ilustra-mobile.svg" class="ilustra-mobile" alt="">
     </section>
 
     <section class="s-digital">
         <div class="container">
-            <h3>Turning Ideas into <br/> Digital Reality</h3>
+            <h3 data-aos="fade-right">Turning Ideas into <br/> Digital Reality</h3>
             <ul>
                 <li>
                     <div class="item-digital">
@@ -95,7 +99,7 @@
     <section class="s-art-front">
         <div class="container">
             <div class="title-text">
-                <div class="left">
+                <div class="left" data-aos="fade-right">
                     <h3>Master the art of Front-end</h3>
                     <p>Get ready to create amazing and functional web interfaces with this complete front-end course.</p>
                 </div>
@@ -104,7 +108,7 @@
                 </div>   
             </div>
             <div class="all">
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Foundations</span>
                         <div class="image">
                             <img src="/img/image-post.svg" alt="">
@@ -114,7 +118,7 @@
                             <p>Learn to use the latest version of HTML and create well-structured, search engine-optimized web pages.</p>
                         </div>
                 </div> 
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Styling</span>
                         <div class="image">
                             <img src="/img/image-post.svg" alt="">
@@ -124,7 +128,7 @@
                             <p>Explore advanced css3 features to create responsive layouts, amazing animations, and eye-catching designs.</p>
                         </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Empowering</span>
                         <div class="image">
                             <img src="/img/image-post.svg" alt="">
@@ -134,7 +138,7 @@
                             <p>Learn to program with modern javascript and make your pages interactive and dynamic, providing a unique experience.</p>
                         </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Applications</span>
                         <div class="image">
                             <img src="/img/image-post.svg" alt="">
@@ -144,7 +148,7 @@
                             <p>Discover how to utilize popular frameworks like react, angular, and vue.js to create complete and efficient web applications.</p>
                         </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Designs</span>
                         <div class="image">
                             <img src="/img/image-post.svg" alt="">
@@ -159,7 +163,7 @@
     </section>
 
     <section class="s-newsletter">
-        <div class="container">
+        <div class="container" data-aos="zoom-out">
             <h2>Straightforward and Simple Front-end!</h2>
             <p>Learn to develop modern and high-quality interfaces with those who are in the field working on highly renowned projects.</p>
             <button class="btn-primary white lg">
@@ -247,5 +251,13 @@
             <p class="copy">2023 © All rights reserved. <strong>Codeboost</strong></p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1000,
+          disable: 'mobile'
+        });
+    </script>
 </body>
 </html>
